@@ -5,6 +5,8 @@ const bob = http.createServer((req, res) => {
   console.log(url.searchParams);
   if (url.searchParams.get('domain').endsWith('hooray.social')) {
     res.statusCode = 204;
+  } else if (url.searchParams.get('domain').endsWith('loar.network')) {
+    res.statusCode = 204;
   } else {
     res.statusCode = 403;
   }
