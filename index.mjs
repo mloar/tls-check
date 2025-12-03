@@ -7,6 +7,8 @@ const bob = http.createServer((req, res) => {
     res.statusCode = 204;
   } else if (url.searchParams.get('domain').endsWith('loar.network')) {
     res.statusCode = 204;
+  } else if (url.searchParams.get('domain').endsWith('loar.attorney')) {
+    res.statusCode = 204;
   } else {
     res.statusCode = 403;
   }
